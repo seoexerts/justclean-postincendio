@@ -1,0 +1,4 @@
+# public/_redirects — Cloudflare Pages
+# 404 personalizada
+
+/* /404/index.html 404

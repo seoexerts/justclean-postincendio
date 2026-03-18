@@ -1,7 +1,7 @@
 /*
  * ── Variables CSS corporativas ─────────────────────────────────────────
  * Archivo: src/styles/variables-override.css
- * Generado: 15/3/2026
+ * Generado: 18/3/2026
  *
  * INSTRUCCIONES:
  * Copia el bloque :root de abajo dentro de BaseLayout.astro,
@@ -10,9 +10,9 @@
 
 :root {
   /* Color primario: botones, enlaces, acentos */
-  --c-primary:   #29e326;
-  --c-primary-d: color-mix(in srgb, #29e326 75%, #000);
-  --c-primary-l: color-mix(in srgb, #29e326  8%, #fff);
+  --c-primary:   #d74747;
+  --c-primary-d: color-mix(in srgb, #d74747 75%, #000);
+  --c-primary-l: color-mix(in srgb, #d74747  8%, #fff);
 
   /* Color de texto principal */
   --c-text:      #0f172a;

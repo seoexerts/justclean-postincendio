@@ -1,89 +1,74 @@
 /**
  * ╔═══════════════════════════════════════════════════════╗
  * ║  CONFIGURACIÓN CENTRAL DEL SITIO — src/config/site.ts ║
- * ║  Generado por generator.html — edita allí, no aquí   ║
+ * ║  Generado automáticamente · 18/3/2026             ║
  * ╚═══════════════════════════════════════════════════════╝
  */
 
 export const siteConfig = {
 
   // ── Identidad del negocio ──────────────────────────────
-  businessName:      'Nombre del Negocio',
-  businessNameLegal: 'Nombre Legal S.L.',
-  cif:   'B00000000',
+  businessName:      'JustClean Incendios',
+  businessNameLegal: 'JustClean',
+  cif:   'B12345678',
   logo:  '/logo.png',
 
   // ── Servicio y área ────────────────────────────────────
-  serviceType:  'Tipo de servicio',
-  area:         'Ciudad principal y municipios cercanos.',
-  mainCity:     'Ciudad Principal',
-  comarca:      'la Comarca',
-  foundingYear: '2020',
+  serviceType:  'Limpieza post incendio: Desinfección y desodorización',
+  area:         'Barcelona, municipios cercanos y todo Catalunya',
+  mainCity:     'Barcelona',
+  comarca:      'Barcelonés, Baix Llobregat, Maresme, Vallès Oriental, Vallès Occidental',
+  foundingYear: '2018',
 
   // ── Contacto ──────────────────────────────────────────
-  phone:    '+34 600 000 000',
-  email:    'info@ejemplo.com',
-  whatsapp: '34600000000',
-  // import.meta.env.SITE lee el campo `site` de astro.config.mjs,
-  // que a su vez lee process.env.PUBLIC_SITE_URL del dashboard de la plataforma.
-  // @ts-ignore — import.meta.env requiere node_modules instalados para el IDE
-  web: import.meta.env.SITE || 'https://tu-web.netlify.app',
+  phone:    '602365996',
+  email:    'info@justclean.es',
+  whatsapp: '602365996',
+  web:      'https://justclean.es',
 
   // ── Horario ───────────────────────────────────────────
-  horario:      'Mo-Fr 09:00-18:00',
-  horarioTexto: 'Lunes a Viernes, 9:00–18:00',
-  horarioDias:  ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] as string[],
+  horario:      'Mo-Sa 09:00-20:00',
+  horarioTexto: 'Lunes a Sábado, 9:00–20:00',
+  horarioDias:  ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'] as string[],
   horarioAbre:  '09:00',
-  horarioCierra:'18:00',
+  horarioCierra:'20:00',
 
   // ── SEO ───────────────────────────────────────────────
-  description: 'Descripción del negocio para meta description y Schema.',
+  description: 'Especialistas en servicios profesionales de limpieza POST INCENDIO en todo Barcelona y provincia. Presupuesto gratuito y garantía por escrito.',
   priceRange:  '€€',
   aggregateRating: {
-    ratingValue:  5.0,
-    reviewCount:  0,
+    ratingValue:  4.9,
+    reviewCount:  30,
     bestRating:   5,
     worstRating:  1,
   },
 
   // ── Colores corporativos ──────────────────────────────
-  colorPrimary: '#0057ff',
+  colorPrimary: '#d74747',
   colorText:    '#0f172a',
 
   // ── Diseño visual ─────────────────────────────────────
-  // fontFamily: Inter | Plus Jakarta Sans | Outfit | Nunito | DM Sans | Sora
-  fontFamily:  'Inter',
-  // designStyle: sharp | rounded | pill
+  fontFamily:  'DM Sans',
   designStyle: 'rounded',
-  // brandIcon: ◈ | ◆ | ⬡ | ✦ | ◉ | ⬢ | ▲ | ●
-  brandIcon:   '◈',
-  // mapZoom: 13–16
+  brandIcon:   '▲',
   mapZoom:     15,
 
   // ── SEO avanzado ──────────────────────────────────────
-  // titleFormula: 1 | 2 | 3 | 4  (varía la estructura del <title>)
   titleFormula: 1,
-  // schemaType: tipo Schema.org según sector
-  // LocalBusiness | Plumber | Electrician | HousePainter | MovingCompany
-  // CleaningService | HomeAndConstructionBusiness | ProfessionalService
-  schemaType:  'LocalBusiness',
+  schemaType:  'CleaningService',
   // sectionOrder: orden y visibilidad de secciones en la home
-  // Elimina una sección del array para ocultarla
-  // Hero (①) y CTA final (⑨) son siempre fijos
-  sectionOrder: ['beneficios','servicios','zona','proceso','testimonios','precios','faq'] as string[],
+  sectionOrder: ["servicios","beneficios","proceso","zona","precios","testimonios","faq"] as string[],
 
   // ── Navegación ────────────────────────────────────────
-  navAbout:    'Quiénes somos',   // alt: 'Sobre nosotros' | 'La empresa' | 'Equipo'
-  navFaq:      'FAQ',             // alt: 'Preguntas' | 'Dudas frecuentes' | 'Ayuda'
-  navCta:      'PRESUPUESTO GRATIS', // alt: 'LLAMAR AHORA' | 'CONSULTA GRATIS' | 'SOLICITAR CITA'
-  navCtaShort: 'PRESUPUESTO',     // versión corta para móvil
-  navCtaEmoji: '📋',              // alt: '📞' | '✉️' | '🔥' | '⚡' | '🛠️' | '✅' | '💬'
+  navAbout:    'Equipo',
+  navFaq:      'Preguntas',
+  navCta:      'LLAMAR AHORA',
+  navCtaShort: 'LLAMAR',
+  navCtaEmoji: '🎯',
 
   // ── Enlaces externos ──────────────────────────────────
-  // Dejar url vacía para ocultar el enlace
-  // rel: 'nofollow' | 'follow'  (nofollow = no pasa PageRank)
-  externalLink1: { url: '', anchor: '', rel: 'nofollow' },  // aparece en el hero
-  externalLink2: { url: '', anchor: '', rel: 'nofollow' },  // aparece en el footer
+  externalLink1: { url: 'https://maps.app.goo.gl/9u5tMrCJgCBKFeMU8', anchor: 'Empresa especializada en limpieza y desinfección con post incendio', rel: 'follow' },
+  externalLink2: { url: 'https://www.justclean.es/', anchor: '© 2026 JustClean Barcelona ', rel: 'follow' },
 
   // ── Redes sociales ────────────────────────────────────
   social: {
@@ -93,7 +78,7 @@ export const siteConfig = {
   },
 
   // ── Verificación de sitio ─────────────────────────────
-  googleVerification: '',
+  googleVerification: '"VecKxVtQt7zzzW_RNZbxeAsYQ66Ih20xCXJu00z2fAA" />',
   bingVerification:   '',
 
 } as const;
